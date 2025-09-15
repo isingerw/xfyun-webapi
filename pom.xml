@@ -6,7 +6,7 @@
 
     <groupId>com.xfyun</groupId>
     <artifactId>xfyun-webapi</artifactId>
-    <version>1.0.0</version>
+    <version>1.2.6</version>
     <packaging>jar</packaging>
 
     <name>xfyun-webapi</name>
