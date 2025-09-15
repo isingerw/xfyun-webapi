@@ -1,19 +1,45 @@
 # 科大讯飞WebAPI后端服务
 
-这是一个基于Spring Boot的科大讯飞WebAPI后端服务，提供讯飞各种AI服务的签名生成和API密钥管理功能。
+<div align="center">
 
-## 功能特性
+[![Java](https://img.shields.io/badge/Java-8+-blue.svg)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.18-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Maven](https://img.shields.io/badge/Maven-3.6+-red.svg)](https://maven.apache.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/isingerw/xfyun-webapi)
 
-- **语音听写 (IAT)**: 提供语音转文字的签名生成
-- **语音合成 (TTS)**: 提供文字转语音的签名生成
-- **实时语音转写 (RTASR)**: 提供长时间语音转文字的签名生成
-- **长文本语音合成 (DTS)**: 提供长文本语音合成的签名生成
+一个基于Spring Boot的科大讯飞WebAPI后端服务，提供讯飞各种AI服务的签名生成和API密钥管理功能。
 
-## 技术栈
+[快速开始](#快速开始) • [文档](#文档) • [API接口](#api接口) • [部署](#部署) • [贡献](#贡献) • [许可证](#许可证)
 
-- Java 8+
-- Spring Boot 2.7.18
-- Maven 3.6+
+</div>
+
+## ✨ 功能特性
+
+- 🎯 **语音听写 (IAT)** - 提供语音转文字的签名生成
+- 🎵 **语音合成 (TTS)** - 提供文字转语音的签名生成
+- 🔄 **实时语音转写 (RTASR)** - 提供长时间语音转文字的签名生成
+- 📚 **长文本语音合成 (DTS)** - 提供长文本语音合成的签名生成
+- 🔐 **安全密钥管理** - 统一的API密钥管理和签名验证
+- 🚀 **高性能** - 支持高并发签名生成
+- 🛠️ **易于部署** - 支持Docker和Kubernetes部署
+
+## 🛠️ 技术栈
+
+- **Java 8+** - 编程语言
+- **Spring Boot 2.7.18** - 应用框架
+- **Maven 3.6+** - 构建管理
+- **Spring Boot Actuator** - 监控和管理
+
+## 📚 文档
+
+- [📖 完整文档](README.md) - 详细的使用说明和API文档
+- [🏗️ 项目架构](ARCHITECTURE.md) - 项目架构和设计原则
+- [🚀 快速开始](QUICK_START.md) - 5分钟快速上手指南
+- [💡 最佳实践](BEST_PRACTICES.md) - 开发和使用的最佳实践
+- [📋 发布说明](RELEASE_NOTES.md) - 版本更新和发布说明
+- [📊 项目总结](PROJECT_SUMMARY.md) - 项目特性和技术栈介绍
+- [🤝 贡献指南](CONTRIBUTING.md) - 如何参与项目贡献
 
 ## 快速开始
 
