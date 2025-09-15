@@ -1,0 +1,50 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: xfyun-webapi
+  profiles:
+    active: dev
+
+# 科大讯飞API配置
+xfyun:
+  # 语音听写(IAT)配置
+  iat:
+    app-id: your-iat-app-id
+    api-key: your-iat-api-key
+    api-secret: your-iat-api-secret
+  # 语音合成(TTS)配置
+  tts:
+    app-id: your-tts-app-id
+    api-key: your-tts-api-key
+    api-secret: your-tts-api-secret
+  # 实时语音转写(RTASR)配置
+  rtasr:
+    app-id: your-rtasr-app-id
+    api-key: your-rtasr-api-key
+  # 长文本语音合成(DTS)配置
+  dts:
+    app-id: your-dts-app-id
+    api-key: your-dts-api-key
+    api-secret: your-dts-api-secret
+
+# 日志配置
+logging:
+  level:
+    com.xfyun.webapi: DEBUG
+    org.springframework.web: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# 管理端点配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized

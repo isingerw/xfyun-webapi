@@ -1,0 +1,30 @@
+# 开发环境配置
+server:
+  port: 8080
+
+# 开发环境日志配置
+logging:
+  level:
+    com.xfyun.webapi: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+
+# 科大讯飞API配置 - 开发环境示例
+xfyun:
+  iat:
+    app-id: dev-iat-app-id
+    api-key: dev-iat-api-key
+    api-secret: dev-iat-api-secret
+  tts:
+    app-id: dev-tts-app-id
+    api-key: dev-tts-api-key
+    api-secret: dev-tts-api-secret
+  rtasr:
+    app-id: dev-rtasr-app-id
+    api-key: dev-rtasr-api-key
+  dts:
+    app-id: dev-dts-app-id
+    api-key: dev-dts-api-key
+    api-secret: dev-dts-api-secret

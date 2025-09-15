@@ -1,0 +1,31 @@
+# 生产环境配置
+server:
+  port: 8080
+
+# 生产环境日志配置
+logging:
+  level:
+    com.xfyun.webapi: INFO
+    org.springframework.web: WARN
+    org.springframework.security: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+
+# 科大讯飞API配置 - 生产环境
+# 注意：请替换为实际的API密钥信息
+xfyun:
+  iat:
+    app-id: ${XFyun_IAT_APP_ID:your-prod-iat-app-id}
+    api-key: ${XFyun_IAT_API_KEY:your-prod-iat-api-key}
+    api-secret: ${XFyun_IAT_API_SECRET:your-prod-iat-api-secret}
+  tts:
+    app-id: ${XFyun_TTS_APP_ID:your-prod-tts-app-id}
+    api-key: ${XFyun_TTS_API_KEY:your-prod-tts-api-key}
+    api-secret: ${XFyun_TTS_API_SECRET:your-prod-tts-api-secret}
+  rtasr:
+    app-id: ${XFyun_RTASR_APP_ID:your-prod-rtasr-app-id}
+    api-key: ${XFyun_RTASR_API_KEY:your-prod-rtasr-api-key}
+  dts:
+    app-id: ${XFyun_DTS_APP_ID:your-prod-dts-app-id}
+    api-key: ${XFyun_DTS_API_KEY:your-prod-dts-api-key}
+    api-secret: ${XFyun_DTS_API_SECRET:your-prod-dts-api-secret}
